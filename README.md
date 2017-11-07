@@ -19,7 +19,7 @@
 # What is <this software>?
 
 Overview Diagram
-
+![Workflow](/MagicBlastWorkflow.vsdx?raw=true "Workflow.png")
 # How to use <this software>
 
 ## Installation options:
