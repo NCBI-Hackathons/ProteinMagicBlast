@@ -22,7 +22,7 @@
 # What is <this software>?
 
 Overview Diagram
-![Workflow](MagicBlastWorkFlow.png?raw=true "MagicBlastWorkFlow.png")
+![Workflow](MagicBlastWorkFlow.jpg?raw=true "MagicBlastWorkFlow.jpg")
 # How to use <this software>
 
 ## Installation options:
