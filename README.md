@@ -1,5 +1,5 @@
 # Super Magic Blast
-
+![Workflow](/bc073254-b7d4-4648-912f-a346c63b585f.png?raw=true "logo.png")
 ## Website (if applicable)
 
 ## Introduction
