@@ -3,7 +3,8 @@
 ## Website (if applicable)
 
 ## Introduction
-    We are adding the functionalities to the existing Magic Blast which makes it Super Magic Blast.These functionalities will make the       Magic Blast run faster. The results will be displayed in same fashion but delivered faster. 
+    We are adding the functionalities to the existing Magic Blast which makes it Super Magic Blast.
+    These functionalities will make the Magic Blast run faster. The results will be displayed in same fashion but delivered faster. 
     New Translated Magic Blast allows user to find changes and relationship for the given genome with interested protein.  
 
 ## What's the problem?
@@ -14,7 +15,9 @@
 
 ## Why should we solve it?
    Faster Magic Blast will save lots of time and resources thus giving user opportunity to do better research. 
-   Amino acid point mutations (nsSNPs) may change protein structure and function. The second approach lets us identify the changes and      the magnitude may vary depending on how similar or dissimilar the replaced amino acids are, as well as on their position in the          sequence or the structure.  
+   Amino acid point mutations (nsSNPs) may change protein structure and function. 
+   The second approach lets us identify the changes and the magnitude may vary depending on how similar or dissimilar
+   the replaced amino acids are, as well as on their position in the sequence or the structure.  
    
 # What is <this software>?
 
