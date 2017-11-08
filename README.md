@@ -54,5 +54,22 @@ The Docker image contains ProteinMagicBlast as well as a webserver and FTP serve
 ### Installing ProteinMagicBlast from Github
 
  `git clone https://github.com/NCBI-Hackathons/ProteinMagicBlast.git`
+ 
+ 
+ ## Project Team:
+
+1. Grzegorz M Boratyn
+2. Monika Bihan
+3. Karina Zile
+4. Yevhen I Krasichkov
+5. Vladislav I Evgeniev
+6. Jan Piotr Buchmann
+
+## Future Development Plans
+
+1. Expand it use on annotated whole genome sequences. 
+2. Extending it to large protein databases.
+3. Expand it to take more than one SRR or Refseq accession input
+
 
   
