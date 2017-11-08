@@ -31,8 +31,8 @@ Overview Diagram
 In the simplest form Super Magic blast requires only two inputs: PROTEIN Accession and SRR Accession.
 For Example:
     
-```supermagicblast.py -prot_accs NP_066251.1  -srr SRR5150787 
-```    
+``` supermagicblast.py -prot_accs NP_066251.1  -srr SRR5150787 ```
+
  The output is standard blastx output in json format
     
 ## Installation options:
