@@ -31,8 +31,10 @@ def progressGet(request):
 
 def result(request):
 	user_id = request.GET['user_id']
+	result_url = request.build_absolute_uri('/smblast/result/download/?user_id=' + user_id)
 	context = {
-		'user_id' : str(user_id)
+		'user_id' : str(user_id),
+		'result_url' : result_url,
 	}
 
 	process = Process(user_id)
