@@ -3,18 +3,14 @@
 ## Website (if applicable)
 
 ## Introduction
-    We are adding the functionalities to the existing Magic Blast which makes it Super Magic Blast.
-    These functionalities will make the Magic Blast run faster. The results will be displayed in same fashion but delivered faster. 
-    New Translated Magic Blast allows user to find changes and relationship for the given genome with interested protein.  
+    The purpose of this approach is to provide answers to questions raised by scientific community in regard to changes in the       protein sequences when compared with SRA data using Magic Blast tool and supporting software. The main question answered is given       the genomic sequences if it has sequences related with a given protein and also if any changes in protein has occurred. The software     will provide the protein alignments and changes in amino acids will be displayed on the viewer.  
 
-## What's the problem?
-    There is no problem with Magic Blast but optimizing it to deliver results fast. 
-    New Translated Magic Blast solves the problem of user. User has some genome(s) and it is interestred in specific proteins. 
-    User wants to know if in the new genome are there any significant changes related with given protein? 
+## What's the problem? 
+    New Translated Magic Blast solves the problem of user when finding relationship of given sequence data with interested proteins.  
+    User wants to know if in the new genome(sequences) are interested protein sequences be found? if yes, are there any significant         changes related with interested protein? 
     Has the amino acid changed at any of the positions?  
 
-## Why should we solve it?
-   Faster Magic Blast will save lots of time and resources thus giving user opportunity to do better research. 
+## Why should we solve it? 
    Amino acid point mutations (nsSNPs) may change protein structure and function. 
    The second approach lets us identify the changes and the magnitude may vary depending on how similar or dissimilar
    the replaced amino acids are, as well as on their position in the sequence or the structure.  
