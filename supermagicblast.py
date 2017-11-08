@@ -55,10 +55,10 @@ def main(args):
     mb = magicblast.Magicblast()
     mb.run(args.srr[0], eutils.mrna_path)
     writeStatus({'progress': 60, 'status': 'Creating consensus..', 'finished': False })
-    consens.assemble_transcripts(eutils.mrna_path, 'testrun.fa', 'out.sam')
+    consens.assemble_transcripts(eutils.mrna_path, 'consensus.fa', 'out.sam')
     writeStatus({'progress': 66, 'status': 'Creating alignments..', 'finished': False })
     bx = run_blastx.RunBlastX(db=eutils.protein_path)
-    bx.run(eutils.mrna_path, 'result.out')
+    bx.run('consensus.fa', 'result.out')
     writeStatus({'progress': 100, 'status': 'Finished..', 'finished': True })
 
     scriptPath = os.path.dirname(os.path.realpath(__file__))
