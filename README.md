@@ -30,7 +30,11 @@ Overview Diagram
 # How to use <this software>
 In the simplest form ProteinMagicBlast requires only two inputs: PROTEIN Accession and SRR Accession.
 For Example:
-    
+
+```
+python webui/manage.py run server
+```
+
 ``` supermagicblast.py -prot_accs NP_066251.1  -srr SRR5150787 ```
 
  The output is standard blastx output in json format.
