@@ -82,6 +82,6 @@ Python packages from requirements.txt file:
 1. Expand it use on annotated whole genome sequences. 
 2. Extending it to large protein databases.
 3. Expand it to take more than one SRR or Refseq accession input
-
+4. Improve the speed of the analysis, especially the assembly of the consensus sequence. 
 
   
