@@ -58,7 +58,9 @@ Clone github repository:
 
 Install dependencies:
 [Magic-BLAST](https://ncbi.github.io/magicblast)
+
 [BLAST+](https://blast.ncbi.nlm.nih.gov)
+
 [freebayes](https://github.com/ekg/freebayes)
 
  
