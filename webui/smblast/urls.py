@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^progress/$', views.progress, name='progress'),
     url(r'^progress/get/$', views.progressGet, name='progressGet'),
     url(r'^result/$', views.result, name='result'),
+    url(r'^result/download/$', views.resultDownload, name='resultDownload'),
 ]
