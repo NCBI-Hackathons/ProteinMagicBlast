@@ -84,4 +84,5 @@ Python packages from requirements.txt file:
 3. Expand it to take more than one SRR or Refseq accession input
 4. Improve the speed of the analysis, especially the assembly of the consensus sequence. 
 
+https://youtu.be/mk0GjJ8v-7A 
   
