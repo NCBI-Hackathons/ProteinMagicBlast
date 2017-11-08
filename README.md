@@ -52,9 +52,15 @@ The Docker image contains ProteinMagicBlast as well as a webserver and FTP serve
 3. Edit the configuration files as below
 
 ### Installing ProteinMagicBlast from Github
+Clone github repository:
 
  `git clone https://github.com/NCBI-Hackathons/ProteinMagicBlast.git`
- 
+
+Install dependencies:
+[Magic-BLAST](https://ncbi.github.io/magicblast)
+[BLAST+](https://blast.ncbi.nlm.nih.gov)
+[freebayes](https://github.com/ekg/freebayes)
+
  
  ## Project Team:
 
