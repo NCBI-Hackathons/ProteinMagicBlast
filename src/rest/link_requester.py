@@ -9,13 +9,13 @@ import sys
 import math
 from . import request
 from . import link_batch
-from . import link_request_parser
 
 class NcbiLinkRequester(request.NcbiRequest):
-  def __init__(self, fromdb, db, command='neighbor', useSubsets=False, wait=0.3):
+  def __init__(self, fromdb, db, email, command='neighbor', useSubsets=False, wait=0.3):
     super().__init__('elink.fcgi', wait=wait)
     self.tool = 'supermagicLinker'
     self.retmode = 'xml'
+    self.contact = email
     self.batch_size = 500
     self.useSubsets = useSubsets
     self.fromdb = fromdb
@@ -26,7 +26,7 @@ class NcbiLinkRequester(request.NcbiRequest):
     print("Mode: {0} :: Batch size: {1} :: Use subsets {2}".format(self.retmode,
           self.batch_size, self.useSubsets), file=sys.stderr)
 
-  def request(self, uids, options={}, parser=link_request_parser.NcbiLinkRequestParser()):
+  def request(self, uids, parser, options={}):
     self.set_options(options)
     self.expected_uids = len(uids)
     self.expected_batches = math.ceil(self.expected_uids/self.batch_size)

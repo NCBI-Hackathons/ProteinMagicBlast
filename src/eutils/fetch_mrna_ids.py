@@ -1,7 +1,10 @@
+import os
+import sys
 import xml.etree.ElementTree as ET
 from collections import namedtuple
+sys.path.insert(1, os.path.join(sys.path[0], '../'))
+from rest import fetch_requester
 
-from eutils import fetch_requester
 Mrna = namedtuple('Mrna', ['gi', 'accession', 'sequence', 'prot_gi'])
 Protein = namedtuple('Protein', ['gi', 'accession', 'sequence', 'mrna_gi'])
 
@@ -36,11 +39,12 @@ class EUtilsProteinParser:
       self.proteins.append(Protein(gi, accver, sequence, self.prot_to_mrna[gi]))
 
 class EUtilsParser:
-  def __init__(self):
+  def __init__(self, email):
     self.prot_to_mrna = dict()
     self.mrna_to_prot = dict()
     self.proteins = []
     self.mrnas = []
+    self.email = email
 
   def parse(self, request):
     xmlstr = request.response.read().decode()
@@ -56,9 +60,9 @@ class EUtilsParser:
       mrnas_list.append(mrna_ids[i].text)
       #self.proteins.append(Protein(protein_ids[i].text, request.ids[i], mrna_ids[i].text))
       i = i+1
-    mrna_nf = fetch_requester.NcbiFetchRequester()
+    mrna_nf = fetch_requester.NcbiFetchRequester(self.email)
     mrna_nf.request(mrnas_list, options={'db' : 'nuccore'}, parser=EUtilsMrnaParser(self.mrna_to_prot, self.mrnas))
-    prot_nf = fetch_requester.NcbiFetchRequester()
+    prot_nf = fetch_requester.NcbiFetchRequester(self.email)
     prot_nf.request(request.ids, options={'db' : 'protein'}, parser=EUtilsProteinParser(self.prot_to_mrna, self.proteins))
     #return mrnas_list
 

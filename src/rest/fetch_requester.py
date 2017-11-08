@@ -14,13 +14,14 @@ from . import fetch_request_parser
 
 class NcbiFetchRequester(request.NcbiRequest):
 
-  def __init__(self, wait=0.3):
+  def __init__(self, email, wait=0.3):
     super().__init__('efetch.fcgi', wait=wait)
     self.tool = 'supermagicFetch'
     self.db = 'sequences'
     self.retmode = 'xml'
     self.rettype = 'fasta'
     self.batch_size = 500
+    self.contact = email
 
   def set_options(self, options):
     self.wait = options.pop('wait', self.wait)
@@ -30,7 +31,7 @@ class NcbiFetchRequester(request.NcbiRequest):
     print("Mode: {0} :: Database: {1} :: Batch size: {2} :: Rettype: {3}".format(self.retmode,
            self.db, self.batch_size, self.rettype), file=sys.stderr)
 
-  def request(self, uids, options={}, parser=fetch_request_parser.NcbiFetchRequestParser()):
+  def request(self, uids, options={}, parser=None):
     self.set_options(options)
     self.expected_uids = len(uids)
     self.expected_batches = math.ceil(self.expected_uids/self.batch_size)
