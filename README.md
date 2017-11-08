@@ -10,9 +10,9 @@
     The software will provide the protein alignments and changes in amino acids will be displayed on the viewer.  
 
 ## What's the problem? 
-    New Translated Magic Blast solves the problem of user when finding relationship of given 
-    sequence data with interested proteins. User wants to know if in the new genome(sequences) 
-    are interested protein sequences be found? if yes, are there any significant changes related with interested protein? 
+    New Translated Magic Blast solves the problem of user when finding relationship of given sequence 
+    data with interested proteins. User wants to know if in the new genome(sequences) are interested 
+    protein sequences be found? if yes, are there any significant changes related with interested protein? 
     Has the amino acid changed at any of the positions?  
 
 ## Why should we solve it? 
