@@ -64,6 +64,9 @@ Install dependencies:
 
 [freebayes](https://github.com/ekg/freebayes)
 
+Python packages from requirements.txt file:
+
+`pip install -r requirements.txt`
  
  ## Project Team:
 
