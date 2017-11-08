@@ -1,0 +1,558 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastx",
+      "version": "BLASTX 2.5.0+",
+      "reference": "Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), \"Gapped BLAST and PSI-BLAST: a new generation of protein database search programs\", Nucleic Acids Res. 25:3389-3402.",
+      "search_target": {
+        "subjects": [
+          "Subject_1",
+          "Subject_2",
+          "Subject_3",
+          "Subject_4"
+        ]
+      },
+      "params": {
+        "matrix": "BLOSUM62",
+        "expect": 10,
+        "gap_open": 11,
+        "gap_extend": 1,
+        "filter": "L;",
+        "cbs": 2,
+        "query_gencode": 1
+      },
+      "results": {
+        "bl2seq": [
+          {
+            "query_id": "Query_1",
+            "query_title": "NC_014372.1 Tai Forest ebolavirus isolate Tai Forest virus/H.sapiens-tc/CIV/1994/Pauleoula-CI, complete genome",
+            "query_len": 18935,
+            "query_masking": [
+              {
+                "from": 60,
+                "to": 114
+              },
+              {
+                "from": 978,
+                "to": 1005
+              },
+              {
+                "from": 1530,
+                "to": 1608
+              },
+              {
+                "from": 1974,
+                "to": 2010
+              },
+              {
+                "from": 2250,
+                "to": 2271
+              },
+              {
+                "from": 2811,
+                "to": 2874
+              },
+              {
+                "from": 3354,
+                "to": 3393
+              },
+              {
+                "from": 3411,
+                "to": 3450
+              },
+              {
+                "from": 3552,
+                "to": 3591
+              },
+              {
+                "from": 4995,
+                "to": 5040
+              },
+              {
+                "from": 5865,
+                "to": 5898
+              },
+              {
+                "from": 5907,
+                "to": 5928
+              },
+              {
+                "from": 5991,
+                "to": 6024
+              },
+              {
+                "from": 6633,
+                "to": 6669
+              },
+              {
+                "from": 6999,
+                "to": 7044
+              },
+              {
+                "from": 8052,
+                "to": 8118
+              },
+              {
+                "from": 8577,
+                "to": 8610
+              },
+              {
+                "from": 8775,
+                "to": 8808
+              },
+              {
+                "from": 9834,
+                "to": 9855
+              },
+              {
+                "from": 11115,
+                "to": 11175
+              },
+              {
+                "from": 12027,
+                "to": 12072
+              },
+              {
+                "from": 13824,
+                "to": 13860
+              },
+              {
+                "from": 15849,
+                "to": 15900
+              },
+              {
+                "from": 16809,
+                "to": 16827
+              },
+              {
+                "from": 17061,
+                "to": 17097
+              },
+              {
+                "from": 18450,
+                "to": 18486
+              },
+              {
+                "from": 553,
+                "to": 598
+              },
+              {
+                "from": 1762,
+                "to": 1849
+              },
+              {
+                "from": 2227,
+                "to": 2272
+              },
+              {
+                "from": 3592,
+                "to": 3643
+              },
+              {
+                "from": 3679,
+                "to": 3721
+              },
+              {
+                "from": 4036,
+                "to": 4060
+              },
+              {
+                "from": 4477,
+                "to": 4510
+              },
+              {
+                "from": 4873,
+                "to": 4912
+              },
+              {
+                "from": 5347,
+                "to": 5371
+              },
+              {
+                "from": 6469,
+                "to": 6502
+              },
+              {
+                "from": 7105,
+                "to": 7156
+              },
+              {
+                "from": 7291,
+                "to": 7342
+              },
+              {
+                "from": 7984,
+                "to": 8038
+              },
+              {
+                "from": 8428,
+                "to": 8467
+              },
+              {
+                "from": 9304,
+                "to": 9337
+              },
+              {
+                "from": 10699,
+                "to": 10723
+              },
+              {
+                "from": 10975,
+                "to": 11017
+              },
+              {
+                "from": 11335,
+                "to": 11368
+              },
+              {
+                "from": 12094,
+                "to": 12127
+              },
+              {
+                "from": 12307,
+                "to": 12367
+              },
+              {
+                "from": 12580,
+                "to": 12613
+              },
+              {
+                "from": 12982,
+                "to": 13024
+              },
+              {
+                "from": 13495,
+                "to": 13552
+              },
+              {
+                "from": 14740,
+                "to": 14779
+              },
+              {
+                "from": 14971,
+                "to": 15007
+              },
+              {
+                "from": 15031,
+                "to": 15070
+              },
+              {
+                "from": 15412,
+                "to": 15460
+              },
+              {
+                "from": 15496,
+                "to": 15556
+              },
+              {
+                "from": 15778,
+                "to": 15820
+              },
+              {
+                "from": 15835,
+                "to": 15865
+              },
+              {
+                "from": 16021,
+                "to": 16075
+              },
+              {
+                "from": 16093,
+                "to": 16120
+              },
+              {
+                "from": 16546,
+                "to": 16564
+              },
+              {
+                "from": 16630,
+                "to": 16660
+              },
+              {
+                "from": 16903,
+                "to": 16951
+              },
+              {
+                "from": 17710,
+                "to": 17737
+              },
+              {
+                "from": 77,
+                "to": 140
+              },
+              {
+                "from": 374,
+                "to": 392
+              },
+              {
+                "from": 908,
+                "to": 950
+              },
+              {
+                "from": 1136,
+                "to": 1172
+              },
+              {
+                "from": 1565,
+                "to": 1619
+              },
+              {
+                "from": 2471,
+                "to": 2495
+              },
+              {
+                "from": 2831,
+                "to": 2867
+              },
+              {
+                "from": 2918,
+                "to": 2966
+              },
+              {
+                "from": 3557,
+                "to": 3596
+              },
+              {
+                "from": 4367,
+                "to": 4412
+              },
+              {
+                "from": 5552,
+                "to": 5585
+              },
+              {
+                "from": 5588,
+                "to": 5627
+              },
+              {
+                "from": 5690,
+                "to": 5747
+              },
+              {
+                "from": 6965,
+                "to": 7043
+              },
+              {
+                "from": 7982,
+                "to": 8024
+              },
+              {
+                "from": 8273,
+                "to": 8315
+              },
+              {
+                "from": 8585,
+                "to": 8615
+              },
+              {
+                "from": 10001,
+                "to": 10028
+              },
+              {
+                "from": 10223,
+                "to": 10271
+              },
+              {
+                "from": 10292,
+                "to": 10319
+              },
+              {
+                "from": 11306,
+                "to": 11339
+              },
+              {
+                "from": 11369,
+                "to": 11396
+              },
+              {
+                "from": 11921,
+                "to": 11942
+              },
+              {
+                "from": 12002,
+                "to": 12044
+              },
+              {
+                "from": 12767,
+                "to": 12782
+              },
+              {
+                "from": 13496,
+                "to": 13529
+              },
+              {
+                "from": 13619,
+                "to": 13664
+              },
+              {
+                "from": 13871,
+                "to": 13913
+              },
+              {
+                "from": 14813,
+                "to": 14849
+              },
+              {
+                "from": 15464,
+                "to": 15500
+              },
+              {
+                "from": 15518,
+                "to": 15545
+              },
+              {
+                "from": 15566,
+                "to": 15605
+              },
+              {
+                "from": 15791,
+                "to": 15824
+              },
+              {
+                "from": 18707,
+                "to": 18797
+              }
+            ],
+            "hits": [
+              {
+                "num": 1,
+                "description": [
+                  {
+                    "id": "XP_006961367.1",
+                    "title": "XP_006961367.1 polymerase [Trichoderma reesei QM6a]"
+                  }
+                ],
+                "len": 1474,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 23.8682,
+                    "score": 50,
+                    "evalue": 2.43679,
+                    "identity": 8,
+                    "positive": 11,
+                    "query_from": 7508,
+                    "query_to": 7552,
+                    "query_frame": 2,
+                    "hit_from": 170,
+                    "hit_to": 184,
+                    "align_len": 15,
+                    "gaps": 0,
+                    "qseq": "GSRRKRRDVTPNTQP",
+                    "hseq": "GERRKARDLSPAPEP",
+                    "midline": "G RRK RD++P  +P"
+                  },
+                  {
+                    "num": 2,
+                    "bit_score": 22.3274,
+                    "score": 46,
+                    "evalue": 5.9833,
+                    "identity": 6,
+                    "positive": 9,
+                    "query_from": 16667,
+                    "query_to": 16705,
+                    "query_frame": -2,
+                    "hit_from": 710,
+                    "hit_to": 722,
+                    "align_len": 13,
+                    "gaps": 0,
+                    "qseq": "CQVWKLSKLCFSY",
+                    "hseq": "CQTWSLTEMCSLY",
+                    "midline": "CQ W L+++C  Y"
+                  }
+                ]
+              },
+              {
+                "num": 2,
+                "description": [
+                  {
+                    "id": "EGR52455.1",
+                    "title": "EGR52455.1 polymerase [Trichoderma reesei QM6a]"
+                  }
+                ],
+                "len": 1474,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 23.8682,
+                    "score": 50,
+                    "evalue": 2.43679,
+                    "identity": 8,
+                    "positive": 11,
+                    "query_from": 7508,
+                    "query_to": 7552,
+                    "query_frame": 2,
+                    "hit_from": 170,
+                    "hit_to": 184,
+                    "align_len": 15,
+                    "gaps": 0,
+                    "qseq": "GSRRKRRDVTPNTQP",
+                    "hseq": "GERRKARDLSPAPEP",
+                    "midline": "G RRK RD++P  +P"
+                  },
+                  {
+                    "num": 2,
+                    "bit_score": 22.3274,
+                    "score": 46,
+                    "evalue": 5.9833,
+                    "identity": 6,
+                    "positive": 9,
+                    "query_from": 16667,
+                    "query_to": 16705,
+                    "query_frame": -2,
+                    "hit_from": 710,
+                    "hit_to": 722,
+                    "align_len": 13,
+                    "gaps": 0,
+                    "qseq": "CQVWKLSKLCFSY",
+                    "hseq": "CQTWSLTEMCSLY",
+                    "midline": "CQ W L+++C  Y"
+                  }
+                ]
+              },
+              {
+                "num": 3,
+                "description": [
+                  {
+                    "id": "AGA95798.1",
+                    "title": "AGA95798.1 polymerase [Hepatitis B virus]"
+                  }
+                ],
+                "len": 843,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 21.9422,
+                    "score": 45,
+                    "evalue": 9.20286,
+                    "identity": 13,
+                    "positive": 19,
+                    "query_from": 6204,
+                    "query_to": 6323,
+                    "query_frame": 3,
+                    "hit_from": 571,
+                    "hit_to": 602,
+                    "align_len": 40,
+                    "gaps": 8,
+                    "qseq": "TSQLKSVGLNLEGNGVATDVPTATKRWGFRAGVPPKVVNC",
+                    "hseq": "TNFLLSLGIHLN--------PHKTKRWGYSLNFMGYVIGC",
+                    "midline": "T+ L S+G++L         P  TKRWG+       V+ C"
+                  }
+                ]
+              }
+            ],
+            "stat": {
+              "hsp_len": 69,
+              "eff_space": 30922868,
+              "kappa": 0.041,
+              "lambda": 0.267,
+              "entropy": 0.14
+            }
+          }
+        ]
+      }
+    }
+  }
+]
+}

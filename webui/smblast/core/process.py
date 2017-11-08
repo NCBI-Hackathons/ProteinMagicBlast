@@ -11,8 +11,8 @@ class Process(object):
 	def __workingDir(self):
 		return 'temp/' + self.id		
 
-	def __outputFilePath(self):
-		return self.__workingDir() + '/output'		
+	def __resultFilePath(self):
+		return self.__workingDir() + '/result.json'		
 
 	def __statusFilePath(self):
 		return self.__workingDir() + '/status.json'		
@@ -33,7 +33,7 @@ class Process(object):
 				self.__scriptFilePath(),
 				srr,
 				protein,
-				self.__outputFilePath(),
+				self.__resultFilePath(),
 				self.__statusFilePath(),
 			],
 			stdout=log, 
@@ -60,3 +60,6 @@ class Process(object):
 		with open(self.__logFilePath()) as logFile:    
 			return logFile.read()
 
+	def GetResult(self):
+		with open(self.__resultFilePath()) as resultFile:    
+			return resultFile.read()

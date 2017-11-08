@@ -17,10 +17,15 @@
   </head>
   <body>
 
-    <div class="container">
-      <div class="m-3"></div>
-      <h4 class="text-center">There is error. Please see attached log:</h4>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="20" readonly>{{log}}</textarea>
+    {% load static %}
+
+    <a href="/smblast/" class="float-left"><img src="{% static "smblast/img/logo.png" %}" class="img-fluid"></a>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="alert alert-danger" role="alert">There is error. Please see attached log:</div>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="20" readonly>{{log}}</textarea>
+      </div>
     </div>
 
   </body>

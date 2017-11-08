@@ -42,4 +42,5 @@ def result(request):
 	    return HttpResponse(template.render(context, request))
 
 	template = loader.get_template('smblast/result.html')
+	context['result'] = process.GetResult()
 	return HttpResponse(template.render(context, request))
