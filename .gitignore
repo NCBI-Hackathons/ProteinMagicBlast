@@ -1,3 +1,11 @@
+
+work/
+# Project specific
+webui/temp/
+
+# MacOS
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -101,4 +109,12 @@ venv.bak/
 /site
 
 # mypy
+<<<<<<< HEAD
 .mypy_cache/
+=======
+<<<<<<< HEAD
+.mypy_cache/
+=======
+.mypy_cache/
+>>>>>>> b718431c2b969a774cc5ee544ec359cf9087700d
+>>>>>>> fef525014f683279574a7637e94ffaf0e041c3f5
