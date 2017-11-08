@@ -2,6 +2,9 @@
 ![Workflow](/bc073254-b7d4-4648-912f-a346c63b585f.png?raw=true "logo.png")
 ## Website (if applicable)
 
+## Pitch
+Biologists are interested in studying variation on a protein level. Does a mutation change an amino acid in a protein. Does the changed protein have the same function? SuperMagicBlast answers these questions. All it needs is a list of SRA accessions and Refseq proteins. It reports differences between sequenced mRNAs and provided proteins.
+
 ## Introduction
     The purpose of this approach is to provide answers to questions raised by scientific community
     in regard to changes in the protein sequences when compared with SRA data using Magic Blast 
