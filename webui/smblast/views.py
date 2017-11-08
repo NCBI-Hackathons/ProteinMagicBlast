@@ -1,6 +1,7 @@
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
 from django.template import loader
+from django.views.static import serve
 from smblast.core.process import *
 import uuid
 
@@ -30,8 +31,10 @@ def progressGet(request):
 
 def result(request):
 	user_id = request.GET['user_id']
+	result_url = request.build_absolute_uri('/smblast/result/download/?user_id=' + user_id)
 	context = {
-		'user_id' : str(user_id)
+		'user_id' : str(user_id),
+		'result_url' : result_url,
 	}
 
 	process = Process(user_id)
@@ -44,3 +47,10 @@ def result(request):
 	template = loader.get_template('smblast/result.html')
 	context['result'] = process.GetResult()
 	return HttpResponse(template.render(context, request))
+
+def resultDownload(request):
+	user_id = request.GET['user_id']
+	process = Process(user_id)
+	filepath = process.GetResultFilePath()
+	return serve(request, os.path.basename(filepath), os.path.dirname(filepath))
+

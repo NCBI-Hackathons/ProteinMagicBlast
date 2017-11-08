@@ -63,3 +63,6 @@ class Process(object):
 	def GetResult(self):
 		with open(self.__resultFilePath()) as resultFile:    
 			return resultFile.read()
+
+	def GetResultFilePath(self):
+		return self.__resultFilePath()
