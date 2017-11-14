@@ -18,8 +18,8 @@ import argparse
 
 from eutils import supermagicblast_eutils
 from wrapper import run_blastx
-from magicblast import consens
-from magicblast import magicblast
+from wrapper import magicblast
+from consensus import consensus
 
 def writeStatus(status):
   with open(statusFilePath, 'w') as outfile:
@@ -35,12 +35,14 @@ def main(args):
     eutils.link(args.prot_accs)
     writeStatus({'progress': 33, 'status': 'Running magicblast..', 'finished': False })
     mb = magicblast.Magicblast()
-    mb.run(args.srr[0], eutils.mrna_path)
+    mapping = mb.run(args.srr[0], eutils.mrna_path)
     writeStatus({'progress': 60, 'status': 'Creating consensus..', 'finished': False })
-    consens.assemble_transcripts(eutils.mrna_path, 'consensus.fa', 'out.sam')
+    c = consensus.Consenter()
+    c.add_ref(eutils.mrna_path)
+    c.parse(mapping)
     writeStatus({'progress': 66, 'status': 'Creating alignments..', 'finished': False })
     bx = run_blastx.RunBlastX(db=eutils.protein_path)
-    bx.run('consensus.fa', 'result.out')
+    bx.run('result.out', c.make_consensus())
     writeStatus({'progress': 100, 'status': 'Finished..', 'finished': True })
 
     scriptPath = os.path.dirname(os.path.realpath(__file__))

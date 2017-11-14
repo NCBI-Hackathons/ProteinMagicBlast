@@ -1,9 +1,5 @@
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
-#
 #  consensus.py
 #
-#  Copyright 2017 USYD
 #  Author: Jan Piotr Buchmann <jan.buchmann@sydney.edu.au>
 #  Description:
 #
@@ -12,16 +8,19 @@
 import io
 import sys
 
-class Consensus:
+class Consenter:
 
   def __init__(self):
     self.reference = None
+    self.refname = None
     self.mtx = []
+
 
   def add_ref(self, ref):
     fh = open(ref, 'r')
     for i in fh:
       if i[0] == '>':
+        self.refname = i[1:].strip()
         self.reference = ''
         continue
       self.reference += i.strip()
@@ -33,7 +32,7 @@ class Consensus:
     for i in self.mtx:
       s = [(k, i[k]) for k in sorted(i, key=i.get, reverse=True)]
       cons += s[0][0]
-    print(">cons\n{}".format(cons))
+    return ">{}\n{}".format(self.refname+'_cons', cons)
 
   def isInt(self, char):
     if ord(char) >= 48 and ord(char) <= 57:
@@ -51,7 +50,7 @@ class Consensus:
     return False
 
   def decode_btop(self, cols):
-    #print(cols[0])
+    #print(cols)
     refpos = int(cols[8])-1
     if cols[8] > cols[9]:
       refpos = int(cols[9])-1
@@ -132,16 +131,6 @@ class Consensus:
         break
 
 
-  def parse(self):
-    for i in sys.stdin:
-      self.decode_btop(i.strip().split('\t'))
-
-def main():
-  c = Consensus()
-  c.add_ref('mrnas.fa')
-  c.parse()
-  c.make_consensus()
-  return 0
-
-if __name__ == '__main__':
-  main()
+  def parse(self, src):
+    for i in src:
+      self.decode_btop(i.decode().strip().split('\t'))
