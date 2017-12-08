@@ -15,7 +15,6 @@ class RunBlastX:
     proc.stdin.close()
     while proc.poll() is None:
       time.sleep(1)
-      errcode = proc.returncode
     if proc.returncode != 0:
       for i in proc.stdout:
         print(i.decode())

@@ -16,8 +16,8 @@ class Magicblast:
 
   def __init__(self, path='magicblast'):
     self.path = path
-    self.num_threads = 10
-    self.outfmt = 'tabular'
+    self.num_threads = 4
+    self.outfmt = 'sam'
     self.out = 'out.sam'
     self.word_size = 20
     self.perc_identity = 60
@@ -27,7 +27,9 @@ class Magicblast:
                       '-sra', srr,
                       '-num_threads', str(self.num_threads),
                       '-outfmt', self.outfmt,
-                      '-splice', 'false']
+                      '-splice', 'F',
+                      #'-out', self.out
+                      ]
     print(cmd)
     ph = subprocess.Popen(cmd, stdout=subprocess.PIPE, bufsize=1)
-    return ph.stdout
+    return ph
